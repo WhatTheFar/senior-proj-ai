@@ -16,6 +16,12 @@ conda create -n senior-proj-ai anaconda
 
 # activate anaconda
 conda activate senior-proj-ai
+
+# add conda-forge channel
+conda config --prepend channels conda-forge 
+
+# install requirements
+conda install --file environment.yml
 ```
 
 ### Activate the environment
