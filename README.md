@@ -29,3 +29,19 @@ conda install --file environment.yml
 ```sh
 source ./pyenv.sh
 ```
+
+## Jupyter Notebook Extension (Optional)
+
+```sh
+source ./pyenv.sh
+
+jupyter contrib nbextension install
+
+# autopep8
+jupyter nbextension enable code_prettify/autopep8
+
+# vim_binding
+cd $PYENV_ROOT/versions/miniconda3-4.3.30/envs/senior-proj-ai/share/jupyter/nbextensions
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+jupyter nbextension enable vim_binding/vim_binding
+```
