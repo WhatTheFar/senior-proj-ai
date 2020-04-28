@@ -1,3 +1,10 @@
+data/
+logs/
+images/
+
+*.h5
+*.pickle
+*.pkl
 
 # Created by https://www.gitignore.io/api/code,macos,python,jetbrains,jupyternotebooks
 # Edit at https://www.gitignore.io/?templates=code,macos,python,jetbrains,jupyternotebooks
