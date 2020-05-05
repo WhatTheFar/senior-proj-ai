@@ -22,14 +22,6 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
     plt.savefig(path, format=fig_extension, dpi=resolution)
 
 
-def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
-    path = os.path.join(IMAGES_PATH, fig_id + "." + fig_extension)
-    print("Saving figure", fig_id)
-    if tight_layout:
-        plt.tight_layout()
-    plt.savefig(path, format=fig_extension, dpi=resolution)
-
-
 def load_sensors_data(data_path='data/sensors.csv', replace_hyphen=False):
     # Importing the dataset
     df = pd.read_csv(data_path)
